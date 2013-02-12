@@ -4,11 +4,11 @@ Donate link: http://www.smeans.com/
 Tags: the event calendar, private category
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add-on to The Events Calendar Plugin (http://wordpress.org/extend/plugins/the-events-calendar/).
+Add-on to The Events Calendar Plugin.
 
 This plug-in allows event categories to be set as private and viewable only to logged-in users.
 
