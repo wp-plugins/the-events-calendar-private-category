@@ -1,5 +1,5 @@
 === The Event Calendar: Private Category ===
-Contributors: don4g, arifwn
+Contributors: don4g, smeans, arifwn
 Donate link: http://www.smeans.com/
 Tags: the event calendar, private category
 Requires at least: 3.3
