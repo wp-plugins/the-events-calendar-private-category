@@ -24,7 +24,7 @@ This plug-in allows event categories to be set as private and viewable only to l
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
 
-== Usage ==
+= Usage =
 
 1. Go to wp-admin > Events > Event Categories
 2. Create a new category or edit existing one
