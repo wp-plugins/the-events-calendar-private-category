@@ -238,4 +238,21 @@ if ( !class_exists( 'EventCategoryExtension' ) ) {
 		}
 	}
 
+	function private_category_show_plugin_fail_message() {
+		if ( current_user_can( 'activate_plugins' ) ) {
+			$url = 'plugin-install.php?tab=plugin-information&plugin=the-events-calendar&TB_iframe=true';
+			$title = __( 'The Events Calendar: Private Category', 'tribe-events-calendar-private-category' );
+			echo '<div class="error"><p>'.sprintf( __( 'To begin using Events Calendar: Private Category, please install the latest version of <a href="%s" class="thickbox" title="%s">The Events Calendar</a>.', 'tribe-events-calendar-pro' ),$url, $title ).'</p></div>';
+		}
+	}
+
+	function private_category_plugin_loaded() {
+		if ( !class_exists( 'TribeEvents' ) ) {
+			add_action( 'admin_notices', 'private_category_show_plugin_fail_message' );
+		}
+	}
+
+	add_action( 'plugins_loaded', 'private_category_plugin_loaded', 1);
+
+
 }
